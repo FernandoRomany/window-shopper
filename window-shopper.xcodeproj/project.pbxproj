@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		ED5234BC2057E31900DE83FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5234BB2057E31900DE83FF /* AppDelegate.swift */; };
-		ED5234BE2057E31900DE83FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5234BD2057E31900DE83FF /* ViewController.swift */; };
+		ED5234BE2057E31900DE83FF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5234BD2057E31900DE83FF /* MainVC.swift */; };
 		ED5234C12057E31900DE83FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5234BF2057E31900DE83FF /* Main.storyboard */; };
 		ED5234C32057E31900DE83FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5234C22057E31900DE83FF /* Assets.xcassets */; };
 		ED5234C62057E31900DE83FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5234C42057E31900DE83FF /* LaunchScreen.storyboard */; };
+		ED5234D02057E6D800DE83FF /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5234CF2057E6D800DE83FF /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED5234B82057E31900DE83FF /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5234BB2057E31900DE83FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED5234BD2057E31900DE83FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED5234BD2057E31900DE83FF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		ED5234C02057E31900DE83FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED5234C22057E31900DE83FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED5234C52057E31900DE83FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED5234C72057E31900DE83FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5234CF2057E6D800DE83FF /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,8 @@
 		ED5234AF2057E31900DE83FF = {
 			isa = PBXGroup;
 			children = (
+				ED5234CE2057E6A100DE83FF /* View */,
+				ED5234CD2057E4D900DE83FF /* Controller */,
 				ED5234BA2057E31900DE83FF /* window-shopper */,
 				ED5234B92057E31900DE83FF /* Products */,
 			);
@@ -55,13 +59,28 @@
 			isa = PBXGroup;
 			children = (
 				ED5234BB2057E31900DE83FF /* AppDelegate.swift */,
-				ED5234BD2057E31900DE83FF /* ViewController.swift */,
 				ED5234BF2057E31900DE83FF /* Main.storyboard */,
 				ED5234C22057E31900DE83FF /* Assets.xcassets */,
 				ED5234C42057E31900DE83FF /* LaunchScreen.storyboard */,
 				ED5234C72057E31900DE83FF /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		ED5234CD2057E4D900DE83FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED5234BD2057E31900DE83FF /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ED5234CE2057E6A100DE83FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED5234CF2057E6D800DE83FF /* CurrencyTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED5234BE2057E31900DE83FF /* ViewController.swift in Sources */,
+				ED5234D02057E6D800DE83FF /* CurrencyTextField.swift in Sources */,
+				ED5234BE2057E31900DE83FF /* MainVC.swift in Sources */,
 				ED5234BC2057E31900DE83FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
